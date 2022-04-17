@@ -1,0 +1,127 @@
+{
+  "@context" : {
+    "WaveHeight" : {
+      "@id" : "http://www.semanticweb.org/laia.subirats/ontologies/2019/1/Ontology1549729681547.owl#WaveHeight"
+    },
+    "Longitude" : {
+      "@id" : "http://www.semanticweb.org/laia.subirats/ontologies/2019/1/Ontology1549729681547.owl#Longitude"
+    },
+    "license" : {
+      "@id" : "http://purl.org/dc/terms/license"
+    },
+    "SeaProperties" : {
+      "@id" : "http://www.semanticweb.org/laia.subirats/ontologies/2019/1/Ontology1549729681547.owl#SeaProperties"
+    },
+    "hasShipCourse" : {
+      "@id" : "http://www.semanticweb.org/laia.subirats/ontologies/2019/1/Ontology1549729681547.owl#hasShipCourse",
+      "@type" : "@id"
+    },
+    "ShipProperties" : {
+      "@id" : "http://www.semanticweb.org/laia.subirats/ontologies/2019/1/Ontology1549729681547.owl#ShipProperties"
+    },
+    "Thing" : {
+      "@id" : "http://www.w3.org/2002/07/owl#Thing"
+    },
+    "isRuleEnabled" : {
+      "@id" : "http://swrl.stanford.edu/ontologies/3.3/swrla.owl#isRuleEnabled"
+    },
+    "hasQualifier" : {
+      "@id" : "http://www.semanticweb.org/laia.subirats/ontologies/2019/1/Ontology1549729681547.owl#hasQualifier",
+      "@type" : "@id"
+    },
+    "hasWindSpeed" : {
+      "@id" : "http://www.semanticweb.org/laia.subirats/ontologies/2019/1/Ontology1549729681547.owl#hasWindSpeed",
+      "@type" : "http://www.w3.org/2001/XMLSchema#integer"
+    },
+    "label" : {
+      "@id" : "http://www.w3.org/2000/01/rdf-schema#label"
+    },
+    "ShipSpeed" : {
+      "@id" : "http://www.semanticweb.org/laia.subirats/ontologies/2019/1/Ontology1549729681547.owl#ShipSpeed"
+    },
+    "CardinalPoints" : {
+      "@id" : "http://www.semanticweb.org/laia.subirats/ontologies/2019/1/Ontology1549729681547.owl#CardinalPoints"
+    },
+    "WavePeriod" : {
+      "@id" : "http://www.semanticweb.org/laia.subirats/ontologies/2019/1/Ontology1549729681547.owl#WavePeriod"
+    },
+    "SeaLevelPressure" : {
+      "@id" : "http://www.semanticweb.org/laia.subirats/ontologies/2019/1/Ontology1549729681547.owl#SeaLevelPressure"
+    },
+    "Qualifiers" : {
+      "@id" : "http://www.semanticweb.org/laia.subirats/ontologies/2019/1/Ontology1549729681547.owl#Qualifiers"
+    },
+    "hasWindDirection" : {
+      "@id" : "http://www.semanticweb.org/laia.subirats/ontologies/2019/1/Ontology1549729681547.owl#hasWindDirection",
+      "@type" : "@id"
+    },
+    "SeaSurfaceTemperature" : {
+      "@id" : "http://www.semanticweb.org/laia.subirats/ontologies/2019/1/Ontology1549729681547.owl#SeaSurfaceTemperature"
+    },
+    "hasTime" : {
+      "@id" : "http://www.semanticweb.org/laia.subirats/ontologies/2019/1/Ontology1549729681547.owl#hasTime",
+      "@type" : "@id"
+    },
+    "Hour" : {
+      "@id" : "http://www.semanticweb.org/laia.subirats/ontologies/2019/1/Ontology1549729681547.owl#Hour"
+    },
+    "LowSpeed" : {
+      "@id" : "http://www.semanticweb.org/laia.subirats/ontologies/2019/1/Ontology1549729681547.owl#LowSpeed"
+    },
+    "WindProperties" : {
+      "@id" : "http://www.semanticweb.org/laia.subirats/ontologies/2019/1/Ontology1549729681547.owl#WindProperties"
+    },
+    "Latitude" : {
+      "@id" : "http://www.semanticweb.org/laia.subirats/ontologies/2019/1/Ontology1549729681547.owl#Latitude"
+    },
+    "WaveDirection" : {
+      "@id" : "http://www.semanticweb.org/laia.subirats/ontologies/2019/1/Ontology1549729681547.owl#WaveDirection"
+    },
+    "Year" : {
+      "@id" : "http://www.semanticweb.org/laia.subirats/ontologies/2019/1/Ontology1549729681547.owl#Year"
+    },
+    "Expedition" : {
+      "@id" : "http://www.semanticweb.org/laia.subirats/ontologies/2019/1/Ontology1549729681547.owl#Expedition"
+    },
+    "Geolocalization" : {
+      "@id" : "http://www.semanticweb.org/laia.subirats/ontologies/2019/1/Ontology1549729681547.owl#Geolocalization"
+    },
+    "WindDirection" : {
+      "@id" : "http://www.semanticweb.org/laia.subirats/ontologies/2019/1/Ontology1549729681547.owl#WindDirection"
+    },
+    "ShipCourse" : {
+      "@id" : "http://www.semanticweb.org/laia.subirats/ontologies/2019/1/Ontology1549729681547.owl#ShipCourse"
+    },
+    "ClimateProperties" : {
+      "@id" : "http://www.semanticweb.org/laia.subirats/ontologies/2019/1/Ontology1549729681547.owl#ClimateProperties"
+    },
+    "sameAs" : {
+      "@id" : "http://www.semanticweb.org/laia.subirats/ontologies/2019/1/Ontology1549729681547.owl#sameAs"
+    },
+    "comment" : {
+      "@id" : "http://www.w3.org/2000/01/rdf-schema#comment"
+    },
+    "hasShipSpeed" : {
+      "@id" : "http://www.semanticweb.org/laia.subirats/ontologies/2019/1/Ontology1549729681547.owl#hasShipSpeed",
+      "@type" : "http://www.w3.org/2001/XMLSchema#integer"
+    },
+    "MediumSpeed" : {
+      "@id" : "http://www.semanticweb.org/laia.subirats/ontologies/2019/1/Ontology1549729681547.owl#MediumSpeed"
+    },
+    "Month" : {
+      "@id" : "http://www.semanticweb.org/laia.subirats/ontologies/2019/1/Ontology1549729681547.owl#Month"
+    },
+    "Time" : {
+      "@id" : "http://www.semanticweb.org/laia.subirats/ontologies/2019/1/Ontology1549729681547.owl#Time"
+    },
+    "Day" : {
+      "@id" : "http://www.semanticweb.org/laia.subirats/ontologies/2019/1/Ontology1549729681547.owl#Day"
+    },
+    "HighSpeed" : {
+      "@id" : "http://www.semanticweb.org/laia.subirats/ontologies/2019/1/Ontology1549729681547.owl#HighSpeed"
+    },
+    "WindSpeed" : {
+      "@id" : "http://www.semanticweb.org/laia.subirats/ontologies/2019/1/Ontology1549729681547.owl#WindSpeed"
+    }
+  }
+}
