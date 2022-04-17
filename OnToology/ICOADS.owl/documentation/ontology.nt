@@ -1,0 +1,354 @@
+<http://www.semanticweb.org/laia.subirats/ontologies/2019/1/Ontology1549729681547.owl> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Ontology> .
+<http://www.semanticweb.org/laia.subirats/ontologies/2019/1/Ontology1549729681547.owl> <http://purl.org/dc/terms/license> "http://purl.org/NET/rdflicense/cc-by4.0" .
+<http://www.semanticweb.org/laia.subirats/ontologies/2019/1/Ontology1549729681547.owl> <http://www.w3.org/2000/01/rdf-schema#comment> "A global marine meteorological and surface ocean dataset\nauthors: Laia Subirats, Felipe Geva, Javier Luis Cánovas" .
+# 
+# 
+# #################################################################
+# #
+# #    Annotation properties
+# #
+# #################################################################
+# 
+# 
+# http://purl.org/dc/terms/license
+<http://purl.org/dc/terms/license> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#AnnotationProperty> .
+# 
+# http://swrl.stanford.edu/ontologies/3.3/swrla.owl#isRuleEnabled
+<http://swrl.stanford.edu/ontologies/3.3/swrla.owl#isRuleEnabled> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#AnnotationProperty> .
+# 
+# http://www.semanticweb.org/laia.subirats/ontologies/2019/1/Ontology1549729681547.owl#sameAs
+<http://www.semanticweb.org/laia.subirats/ontologies/2019/1/Ontology1549729681547.owl#sameAs> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#AnnotationProperty> .
+# 
+# 
+# 
+# #################################################################
+# #
+# #    Object Properties
+# #
+# #################################################################
+# 
+# 
+# http://www.semanticweb.org/laia.subirats/ontologies/2019/1/Ontology1549729681547.owl#hasQualifier
+<http://www.semanticweb.org/laia.subirats/ontologies/2019/1/Ontology1549729681547.owl#hasQualifier> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<http://www.semanticweb.org/laia.subirats/ontologies/2019/1/Ontology1549729681547.owl#hasQualifier> <http://www.w3.org/2000/01/rdf-schema#domain> <http://www.w3.org/2002/07/owl#Thing> .
+<http://www.semanticweb.org/laia.subirats/ontologies/2019/1/Ontology1549729681547.owl#hasQualifier> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.semanticweb.org/laia.subirats/ontologies/2019/1/Ontology1549729681547.owl#Qualifiers> .
+# 
+# http://www.semanticweb.org/laia.subirats/ontologies/2019/1/Ontology1549729681547.owl#hasShipCourse
+<http://www.semanticweb.org/laia.subirats/ontologies/2019/1/Ontology1549729681547.owl#hasShipCourse> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<http://www.semanticweb.org/laia.subirats/ontologies/2019/1/Ontology1549729681547.owl#hasShipCourse> <http://www.w3.org/2000/01/rdf-schema#domain> <http://www.semanticweb.org/laia.subirats/ontologies/2019/1/Ontology1549729681547.owl#Expedition> .
+<http://www.semanticweb.org/laia.subirats/ontologies/2019/1/Ontology1549729681547.owl#hasShipCourse> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.semanticweb.org/laia.subirats/ontologies/2019/1/Ontology1549729681547.owl#ShipCourse> .
+# 
+# http://www.semanticweb.org/laia.subirats/ontologies/2019/1/Ontology1549729681547.owl#hasTime
+<http://www.semanticweb.org/laia.subirats/ontologies/2019/1/Ontology1549729681547.owl#hasTime> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<http://www.semanticweb.org/laia.subirats/ontologies/2019/1/Ontology1549729681547.owl#hasTime> <http://www.w3.org/2000/01/rdf-schema#domain> <http://www.semanticweb.org/laia.subirats/ontologies/2019/1/Ontology1549729681547.owl#Expedition> .
+<http://www.semanticweb.org/laia.subirats/ontologies/2019/1/Ontology1549729681547.owl#hasTime> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.semanticweb.org/laia.subirats/ontologies/2019/1/Ontology1549729681547.owl#Time> .
+# 
+# http://www.semanticweb.org/laia.subirats/ontologies/2019/1/Ontology1549729681547.owl#hasWindDirection
+<http://www.semanticweb.org/laia.subirats/ontologies/2019/1/Ontology1549729681547.owl#hasWindDirection> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<http://www.semanticweb.org/laia.subirats/ontologies/2019/1/Ontology1549729681547.owl#hasWindDirection> <http://www.w3.org/2000/01/rdf-schema#domain> <http://www.semanticweb.org/laia.subirats/ontologies/2019/1/Ontology1549729681547.owl#Expedition> .
+<http://www.semanticweb.org/laia.subirats/ontologies/2019/1/Ontology1549729681547.owl#hasWindDirection> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.semanticweb.org/laia.subirats/ontologies/2019/1/Ontology1549729681547.owl#WindDirection> .
+# 
+# 
+# 
+# #################################################################
+# #
+# #    Data properties
+# #
+# #################################################################
+# 
+# 
+# http://www.semanticweb.org/laia.subirats/ontologies/2019/1/Ontology1549729681547.owl#hasShipSpeed
+<http://www.semanticweb.org/laia.subirats/ontologies/2019/1/Ontology1549729681547.owl#hasShipSpeed> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#DatatypeProperty> .
+<http://www.semanticweb.org/laia.subirats/ontologies/2019/1/Ontology1549729681547.owl#hasShipSpeed> <http://www.w3.org/2000/01/rdf-schema#domain> <http://www.semanticweb.org/laia.subirats/ontologies/2019/1/Ontology1549729681547.owl#ShipSpeed> .
+<http://www.semanticweb.org/laia.subirats/ontologies/2019/1/Ontology1549729681547.owl#hasShipSpeed> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.w3.org/2001/XMLSchema#integer> .
+# 
+# http://www.semanticweb.org/laia.subirats/ontologies/2019/1/Ontology1549729681547.owl#hasWindSpeed
+<http://www.semanticweb.org/laia.subirats/ontologies/2019/1/Ontology1549729681547.owl#hasWindSpeed> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#DatatypeProperty> .
+<http://www.semanticweb.org/laia.subirats/ontologies/2019/1/Ontology1549729681547.owl#hasWindSpeed> <http://www.w3.org/2000/01/rdf-schema#domain> <http://www.semanticweb.org/laia.subirats/ontologies/2019/1/Ontology1549729681547.owl#WindSpeed> .
+<http://www.semanticweb.org/laia.subirats/ontologies/2019/1/Ontology1549729681547.owl#hasWindSpeed> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.w3.org/2001/XMLSchema#integer> .
+# 
+# 
+# 
+# #################################################################
+# #
+# #    Classes
+# #
+# #################################################################
+# 
+# 
+# http://www.semanticweb.org/laia.subirats/ontologies/2019/1/Ontology1549729681547.owl#CardinalPoints
+<http://www.semanticweb.org/laia.subirats/ontologies/2019/1/Ontology1549729681547.owl#CardinalPoints> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://www.semanticweb.org/laia.subirats/ontologies/2019/1/Ontology1549729681547.owl#CardinalPoints> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://www.semanticweb.org/laia.subirats/ontologies/2019/1/Ontology1549729681547.owl#Geolocalization> .
+# 
+# http://www.semanticweb.org/laia.subirats/ontologies/2019/1/Ontology1549729681547.owl#ClimateProperties
+<http://www.semanticweb.org/laia.subirats/ontologies/2019/1/Ontology1549729681547.owl#ClimateProperties> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://www.semanticweb.org/laia.subirats/ontologies/2019/1/Ontology1549729681547.owl#ClimateProperties> <http://www.w3.org/2000/01/rdf-schema#subClassOf> _:genid1 .
+_:genid1 <http://www.w3.org/2002/07/owl#someValuesFrom> <http://www.semanticweb.org/laia.subirats/ontologies/2019/1/Ontology1549729681547.owl#Geolocalization> .
+_:genid1 <http://www.w3.org/2002/07/owl#onProperty> <http://www.semanticweb.org/laia.subirats/ontologies/2019/1/Ontology1549729681547.owl#hasQualifier> .
+_:genid1 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
+# 
+# http://www.semanticweb.org/laia.subirats/ontologies/2019/1/Ontology1549729681547.owl#Day
+<http://www.semanticweb.org/laia.subirats/ontologies/2019/1/Ontology1549729681547.owl#Day> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://www.semanticweb.org/laia.subirats/ontologies/2019/1/Ontology1549729681547.owl#Day> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://www.semanticweb.org/laia.subirats/ontologies/2019/1/Ontology1549729681547.owl#Time> .
+# 
+# http://www.semanticweb.org/laia.subirats/ontologies/2019/1/Ontology1549729681547.owl#Expedition
+<http://www.semanticweb.org/laia.subirats/ontologies/2019/1/Ontology1549729681547.owl#Expedition> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+# 
+# http://www.semanticweb.org/laia.subirats/ontologies/2019/1/Ontology1549729681547.owl#Geolocalization
+<http://www.semanticweb.org/laia.subirats/ontologies/2019/1/Ontology1549729681547.owl#Geolocalization> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+# 
+# http://www.semanticweb.org/laia.subirats/ontologies/2019/1/Ontology1549729681547.owl#HighSpeed
+<http://www.semanticweb.org/laia.subirats/ontologies/2019/1/Ontology1549729681547.owl#HighSpeed> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://www.semanticweb.org/laia.subirats/ontologies/2019/1/Ontology1549729681547.owl#HighSpeed> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://www.semanticweb.org/laia.subirats/ontologies/2019/1/Ontology1549729681547.owl#Qualifiers> .
+<http://www.semanticweb.org/laia.subirats/ontologies/2019/1/Ontology1549729681547.owl#HighSpeed> <http://www.w3.org/2002/07/owl#disjointWith> <http://www.semanticweb.org/laia.subirats/ontologies/2019/1/Ontology1549729681547.owl#LowSpeed> .
+# 
+# http://www.semanticweb.org/laia.subirats/ontologies/2019/1/Ontology1549729681547.owl#Hour
+<http://www.semanticweb.org/laia.subirats/ontologies/2019/1/Ontology1549729681547.owl#Hour> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://www.semanticweb.org/laia.subirats/ontologies/2019/1/Ontology1549729681547.owl#Hour> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://www.semanticweb.org/laia.subirats/ontologies/2019/1/Ontology1549729681547.owl#Time> .
+# 
+# http://www.semanticweb.org/laia.subirats/ontologies/2019/1/Ontology1549729681547.owl#Latitude
+<http://www.semanticweb.org/laia.subirats/ontologies/2019/1/Ontology1549729681547.owl#Latitude> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://www.semanticweb.org/laia.subirats/ontologies/2019/1/Ontology1549729681547.owl#Latitude> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://www.semanticweb.org/laia.subirats/ontologies/2019/1/Ontology1549729681547.owl#Geolocalization> .
+# 
+# http://www.semanticweb.org/laia.subirats/ontologies/2019/1/Ontology1549729681547.owl#Longitude
+<http://www.semanticweb.org/laia.subirats/ontologies/2019/1/Ontology1549729681547.owl#Longitude> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://www.semanticweb.org/laia.subirats/ontologies/2019/1/Ontology1549729681547.owl#Longitude> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://www.semanticweb.org/laia.subirats/ontologies/2019/1/Ontology1549729681547.owl#Geolocalization> .
+# 
+# http://www.semanticweb.org/laia.subirats/ontologies/2019/1/Ontology1549729681547.owl#LowSpeed
+<http://www.semanticweb.org/laia.subirats/ontologies/2019/1/Ontology1549729681547.owl#LowSpeed> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://www.semanticweb.org/laia.subirats/ontologies/2019/1/Ontology1549729681547.owl#LowSpeed> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://www.semanticweb.org/laia.subirats/ontologies/2019/1/Ontology1549729681547.owl#Qualifiers> .
+<http://www.semanticweb.org/laia.subirats/ontologies/2019/1/Ontology1549729681547.owl#LowSpeed> <http://www.w3.org/2002/07/owl#disjointWith> <http://www.semanticweb.org/laia.subirats/ontologies/2019/1/Ontology1549729681547.owl#MediumSpeed> .
+# 
+# http://www.semanticweb.org/laia.subirats/ontologies/2019/1/Ontology1549729681547.owl#MediumSpeed
+<http://www.semanticweb.org/laia.subirats/ontologies/2019/1/Ontology1549729681547.owl#MediumSpeed> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://www.semanticweb.org/laia.subirats/ontologies/2019/1/Ontology1549729681547.owl#MediumSpeed> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://www.semanticweb.org/laia.subirats/ontologies/2019/1/Ontology1549729681547.owl#Qualifiers> .
+# 
+# http://www.semanticweb.org/laia.subirats/ontologies/2019/1/Ontology1549729681547.owl#Month
+<http://www.semanticweb.org/laia.subirats/ontologies/2019/1/Ontology1549729681547.owl#Month> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://www.semanticweb.org/laia.subirats/ontologies/2019/1/Ontology1549729681547.owl#Month> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://www.semanticweb.org/laia.subirats/ontologies/2019/1/Ontology1549729681547.owl#Time> .
+# 
+# http://www.semanticweb.org/laia.subirats/ontologies/2019/1/Ontology1549729681547.owl#Qualifiers
+<http://www.semanticweb.org/laia.subirats/ontologies/2019/1/Ontology1549729681547.owl#Qualifiers> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+# 
+# http://www.semanticweb.org/laia.subirats/ontologies/2019/1/Ontology1549729681547.owl#SeaLevelPressure
+<http://www.semanticweb.org/laia.subirats/ontologies/2019/1/Ontology1549729681547.owl#SeaLevelPressure> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://www.semanticweb.org/laia.subirats/ontologies/2019/1/Ontology1549729681547.owl#SeaLevelPressure> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://www.semanticweb.org/laia.subirats/ontologies/2019/1/Ontology1549729681547.owl#SeaProperties> .
+# 
+# http://www.semanticweb.org/laia.subirats/ontologies/2019/1/Ontology1549729681547.owl#SeaProperties
+<http://www.semanticweb.org/laia.subirats/ontologies/2019/1/Ontology1549729681547.owl#SeaProperties> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://www.semanticweb.org/laia.subirats/ontologies/2019/1/Ontology1549729681547.owl#SeaProperties> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://www.semanticweb.org/laia.subirats/ontologies/2019/1/Ontology1549729681547.owl#ClimateProperties> .
+# 
+# http://www.semanticweb.org/laia.subirats/ontologies/2019/1/Ontology1549729681547.owl#SeaSurfaceTemperature
+<http://www.semanticweb.org/laia.subirats/ontologies/2019/1/Ontology1549729681547.owl#SeaSurfaceTemperature> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://www.semanticweb.org/laia.subirats/ontologies/2019/1/Ontology1549729681547.owl#SeaSurfaceTemperature> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://www.semanticweb.org/laia.subirats/ontologies/2019/1/Ontology1549729681547.owl#SeaProperties> .
+<http://www.semanticweb.org/laia.subirats/ontologies/2019/1/Ontology1549729681547.owl#SeaSurfaceTemperature> <http://www.semanticweb.org/laia.subirats/ontologies/2019/1/Ontology1549729681547.owl#sameAs> "http://dbpedia.org/page/Sea_surface_temperature" .
+<http://www.semanticweb.org/laia.subirats/ontologies/2019/1/Ontology1549729681547.owl#SeaSurfaceTemperature> <http://www.semanticweb.org/laia.subirats/ontologies/2019/1/Ontology1549729681547.owl#sameAs> "http://reegle.info/glossary/3191" .
+# 
+# http://www.semanticweb.org/laia.subirats/ontologies/2019/1/Ontology1549729681547.owl#ShipCourse
+<http://www.semanticweb.org/laia.subirats/ontologies/2019/1/Ontology1549729681547.owl#ShipCourse> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://www.semanticweb.org/laia.subirats/ontologies/2019/1/Ontology1549729681547.owl#ShipCourse> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://www.semanticweb.org/laia.subirats/ontologies/2019/1/Ontology1549729681547.owl#ShipProperties> .
+# 
+# http://www.semanticweb.org/laia.subirats/ontologies/2019/1/Ontology1549729681547.owl#ShipProperties
+<http://www.semanticweb.org/laia.subirats/ontologies/2019/1/Ontology1549729681547.owl#ShipProperties> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://www.semanticweb.org/laia.subirats/ontologies/2019/1/Ontology1549729681547.owl#ShipProperties> <http://www.w3.org/2000/01/rdf-schema#subClassOf> _:genid2 .
+_:genid2 <http://www.w3.org/2002/07/owl#someValuesFrom> <http://www.semanticweb.org/laia.subirats/ontologies/2019/1/Ontology1549729681547.owl#Geolocalization> .
+_:genid2 <http://www.w3.org/2002/07/owl#onProperty> <http://www.semanticweb.org/laia.subirats/ontologies/2019/1/Ontology1549729681547.owl#hasQualifier> .
+_:genid2 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
+# 
+# http://www.semanticweb.org/laia.subirats/ontologies/2019/1/Ontology1549729681547.owl#ShipSpeed
+<http://www.semanticweb.org/laia.subirats/ontologies/2019/1/Ontology1549729681547.owl#ShipSpeed> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://www.semanticweb.org/laia.subirats/ontologies/2019/1/Ontology1549729681547.owl#ShipSpeed> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://www.semanticweb.org/laia.subirats/ontologies/2019/1/Ontology1549729681547.owl#ShipProperties> .
+# 
+# http://www.semanticweb.org/laia.subirats/ontologies/2019/1/Ontology1549729681547.owl#Time
+<http://www.semanticweb.org/laia.subirats/ontologies/2019/1/Ontology1549729681547.owl#Time> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+# 
+# http://www.semanticweb.org/laia.subirats/ontologies/2019/1/Ontology1549729681547.owl#WaveDirection
+<http://www.semanticweb.org/laia.subirats/ontologies/2019/1/Ontology1549729681547.owl#WaveDirection> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://www.semanticweb.org/laia.subirats/ontologies/2019/1/Ontology1549729681547.owl#WaveDirection> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://www.semanticweb.org/laia.subirats/ontologies/2019/1/Ontology1549729681547.owl#SeaProperties> .
+# 
+# http://www.semanticweb.org/laia.subirats/ontologies/2019/1/Ontology1549729681547.owl#WaveHeight
+<http://www.semanticweb.org/laia.subirats/ontologies/2019/1/Ontology1549729681547.owl#WaveHeight> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://www.semanticweb.org/laia.subirats/ontologies/2019/1/Ontology1549729681547.owl#WaveHeight> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://www.semanticweb.org/laia.subirats/ontologies/2019/1/Ontology1549729681547.owl#SeaProperties> .
+# 
+# http://www.semanticweb.org/laia.subirats/ontologies/2019/1/Ontology1549729681547.owl#WavePeriod
+<http://www.semanticweb.org/laia.subirats/ontologies/2019/1/Ontology1549729681547.owl#WavePeriod> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://www.semanticweb.org/laia.subirats/ontologies/2019/1/Ontology1549729681547.owl#WavePeriod> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://www.semanticweb.org/laia.subirats/ontologies/2019/1/Ontology1549729681547.owl#SeaProperties> .
+# 
+# http://www.semanticweb.org/laia.subirats/ontologies/2019/1/Ontology1549729681547.owl#WindDirection
+<http://www.semanticweb.org/laia.subirats/ontologies/2019/1/Ontology1549729681547.owl#WindDirection> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://www.semanticweb.org/laia.subirats/ontologies/2019/1/Ontology1549729681547.owl#WindDirection> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://www.semanticweb.org/laia.subirats/ontologies/2019/1/Ontology1549729681547.owl#WindProperties> .
+<http://www.semanticweb.org/laia.subirats/ontologies/2019/1/Ontology1549729681547.owl#WindDirection> <http://www.semanticweb.org/laia.subirats/ontologies/2019/1/Ontology1549729681547.owl#sameAs> "Wind_direction" .
+# 
+# http://www.semanticweb.org/laia.subirats/ontologies/2019/1/Ontology1549729681547.owl#WindProperties
+<http://www.semanticweb.org/laia.subirats/ontologies/2019/1/Ontology1549729681547.owl#WindProperties> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://www.semanticweb.org/laia.subirats/ontologies/2019/1/Ontology1549729681547.owl#WindProperties> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://www.semanticweb.org/laia.subirats/ontologies/2019/1/Ontology1549729681547.owl#ClimateProperties> .
+# 
+# http://www.semanticweb.org/laia.subirats/ontologies/2019/1/Ontology1549729681547.owl#WindSpeed
+<http://www.semanticweb.org/laia.subirats/ontologies/2019/1/Ontology1549729681547.owl#WindSpeed> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://www.semanticweb.org/laia.subirats/ontologies/2019/1/Ontology1549729681547.owl#WindSpeed> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://www.semanticweb.org/laia.subirats/ontologies/2019/1/Ontology1549729681547.owl#WindProperties> .
+<http://www.semanticweb.org/laia.subirats/ontologies/2019/1/Ontology1549729681547.owl#WindSpeed> <http://www.semanticweb.org/laia.subirats/ontologies/2019/1/Ontology1549729681547.owl#sameAs> "http://dbpedia.org/page/Wind_speed" .
+# 
+# http://www.semanticweb.org/laia.subirats/ontologies/2019/1/Ontology1549729681547.owl#Year
+<http://www.semanticweb.org/laia.subirats/ontologies/2019/1/Ontology1549729681547.owl#Year> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://www.semanticweb.org/laia.subirats/ontologies/2019/1/Ontology1549729681547.owl#Year> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://www.semanticweb.org/laia.subirats/ontologies/2019/1/Ontology1549729681547.owl#Time> .
+# 
+# 
+# 
+# #################################################################
+# #
+# #    Individuals
+# #
+# #################################################################
+# 
+# 
+# http://www.semanticweb.org/laia.subirats/ontologies/2019/1/Ontology1549729681547.owl#Expedition1
+<http://www.semanticweb.org/laia.subirats/ontologies/2019/1/Ontology1549729681547.owl#Expedition1> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<http://www.semanticweb.org/laia.subirats/ontologies/2019/1/Ontology1549729681547.owl#Expedition1> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.semanticweb.org/laia.subirats/ontologies/2019/1/Ontology1549729681547.owl#Expedition> .
+<http://www.semanticweb.org/laia.subirats/ontologies/2019/1/Ontology1549729681547.owl#Expedition1> <http://www.semanticweb.org/laia.subirats/ontologies/2019/1/Ontology1549729681547.owl#hasShipCourse> <http://www.semanticweb.org/laia.subirats/ontologies/2019/1/Ontology1549729681547.owl#NE> .
+<http://www.semanticweb.org/laia.subirats/ontologies/2019/1/Ontology1549729681547.owl#Expedition1> <http://www.semanticweb.org/laia.subirats/ontologies/2019/1/Ontology1549729681547.owl#hasTime> <http://www.semanticweb.org/laia.subirats/ontologies/2019/1/Ontology1549729681547.owl#February> .
+<http://www.semanticweb.org/laia.subirats/ontologies/2019/1/Ontology1549729681547.owl#Expedition1> <http://www.semanticweb.org/laia.subirats/ontologies/2019/1/Ontology1549729681547.owl#hasTime> <http://www.semanticweb.org/laia.subirats/ontologies/2019/1/Ontology1549729681547.owl#18> .
+<http://www.semanticweb.org/laia.subirats/ontologies/2019/1/Ontology1549729681547.owl#Expedition1> <http://www.semanticweb.org/laia.subirats/ontologies/2019/1/Ontology1549729681547.owl#hasTime> <http://www.semanticweb.org/laia.subirats/ontologies/2019/1/Ontology1549729681547.owl#2019> .
+<http://www.semanticweb.org/laia.subirats/ontologies/2019/1/Ontology1549729681547.owl#Expedition1> <http://www.semanticweb.org/laia.subirats/ontologies/2019/1/Ontology1549729681547.owl#hasTime> <http://www.semanticweb.org/laia.subirats/ontologies/2019/1/Ontology1549729681547.owl#9> .
+<http://www.semanticweb.org/laia.subirats/ontologies/2019/1/Ontology1549729681547.owl#Expedition1> <http://www.semanticweb.org/laia.subirats/ontologies/2019/1/Ontology1549729681547.owl#hasWindDirection> <http://www.semanticweb.org/laia.subirats/ontologies/2019/1/Ontology1549729681547.owl#NE> .
+<http://www.semanticweb.org/laia.subirats/ontologies/2019/1/Ontology1549729681547.owl#Expedition1> <http://www.semanticweb.org/laia.subirats/ontologies/2019/1/Ontology1549729681547.owl#hasShipSpeed> "7"^^<http://www.w3.org/2001/XMLSchema#integer> .
+<http://www.semanticweb.org/laia.subirats/ontologies/2019/1/Ontology1549729681547.owl#Expedition1> <http://www.semanticweb.org/laia.subirats/ontologies/2019/1/Ontology1549729681547.owl#hasWindSpeed> "7"^^<http://www.w3.org/2001/XMLSchema#integer> .
+# 
+# http://www.semanticweb.org/laia.subirats/ontologies/2019/1/Ontology1549729681547.owl#February
+<http://www.semanticweb.org/laia.subirats/ontologies/2019/1/Ontology1549729681547.owl#February> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<http://www.semanticweb.org/laia.subirats/ontologies/2019/1/Ontology1549729681547.owl#February> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.semanticweb.org/laia.subirats/ontologies/2019/1/Ontology1549729681547.owl#Month> .
+# 
+# http://www.semanticweb.org/laia.subirats/ontologies/2019/1/Ontology1549729681547.owl#NE
+<http://www.semanticweb.org/laia.subirats/ontologies/2019/1/Ontology1549729681547.owl#NE> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<http://www.semanticweb.org/laia.subirats/ontologies/2019/1/Ontology1549729681547.owl#NE> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.semanticweb.org/laia.subirats/ontologies/2019/1/Ontology1549729681547.owl#CardinalPoints> .
+# 
+# http://www.semanticweb.org/laia.subirats/ontologies/2019/1/Ontology1549729681547.owl#18
+<http://www.semanticweb.org/laia.subirats/ontologies/2019/1/Ontology1549729681547.owl#18> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<http://www.semanticweb.org/laia.subirats/ontologies/2019/1/Ontology1549729681547.owl#18> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.semanticweb.org/laia.subirats/ontologies/2019/1/Ontology1549729681547.owl#Hour> .
+# 
+# http://www.semanticweb.org/laia.subirats/ontologies/2019/1/Ontology1549729681547.owl#2019
+<http://www.semanticweb.org/laia.subirats/ontologies/2019/1/Ontology1549729681547.owl#2019> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<http://www.semanticweb.org/laia.subirats/ontologies/2019/1/Ontology1549729681547.owl#2019> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.semanticweb.org/laia.subirats/ontologies/2019/1/Ontology1549729681547.owl#Year> .
+# 
+# http://www.semanticweb.org/laia.subirats/ontologies/2019/1/Ontology1549729681547.owl#9
+<http://www.semanticweb.org/laia.subirats/ontologies/2019/1/Ontology1549729681547.owl#9> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<http://www.semanticweb.org/laia.subirats/ontologies/2019/1/Ontology1549729681547.owl#9> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.semanticweb.org/laia.subirats/ontologies/2019/1/Ontology1549729681547.owl#Day> .
+# 
+# 
+# 
+# #################################################################
+# #
+# #    Rules
+# #
+# #################################################################
+# 
+# 
+<urn:swrl#o> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2003/11/swrl#Variable> .
+<urn:swrl#w> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2003/11/swrl#Variable> .
+_:genid14 <http://swrl.stanford.edu/ontologies/3.3/swrla.owl#isRuleEnabled> "true"^^<http://www.w3.org/2001/XMLSchema#boolean> .
+_:genid14 <http://www.w3.org/2000/01/rdf-schema#comment> "" .
+_:genid14 <http://www.w3.org/2000/01/rdf-schema#label> "S1" .
+_:genid14 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2003/11/swrl#Imp> .
+_:genid14 <http://www.w3.org/2003/11/swrl#body> _:genid21 .
+_:genid21 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:genid19 .
+_:genid19 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:genid15 .
+_:genid15 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> <http://www.w3.org/1999/02/22-rdf-syntax-ns#nil> .
+_:genid15 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> _:genid16 .
+_:genid16 <http://www.w3.org/2003/11/swrl#arguments> _:genid18 .
+_:genid18 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:genid17 .
+_:genid17 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> <http://www.w3.org/1999/02/22-rdf-syntax-ns#nil> .
+_:genid17 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> "6"^^<http://www.w3.org/2001/XMLSchema#integer> .
+_:genid17 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
+_:genid18 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <urn:swrl#w> .
+_:genid18 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
+_:genid16 <http://www.w3.org/2003/11/swrl#builtin> <http://www.w3.org/2003/11/swrlb#greaterThan> .
+<http://www.w3.org/2003/11/swrlb#greaterThan> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2003/11/swrl#Builtin> .
+_:genid16 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2003/11/swrl#BuiltinAtom> .
+_:genid15 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2003/11/swrl#AtomList> .
+_:genid19 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> _:genid20 .
+_:genid20 <http://www.w3.org/2003/11/swrl#argument1> <urn:swrl#o> .
+_:genid20 <http://www.w3.org/2003/11/swrl#classPredicate> <http://www.semanticweb.org/laia.subirats/ontologies/2019/1/Ontology1549729681547.owl#Expedition> .
+_:genid20 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2003/11/swrl#ClassAtom> .
+_:genid19 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2003/11/swrl#AtomList> .
+_:genid21 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> _:genid22 .
+_:genid22 <http://www.w3.org/2003/11/swrl#argument2> <urn:swrl#w> .
+_:genid22 <http://www.w3.org/2003/11/swrl#argument1> <urn:swrl#o> .
+_:genid22 <http://www.w3.org/2003/11/swrl#propertyPredicate> <http://www.semanticweb.org/laia.subirats/ontologies/2019/1/Ontology1549729681547.owl#hasShipSpeed> .
+_:genid22 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2003/11/swrl#DatavaluedPropertyAtom> .
+_:genid21 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2003/11/swrl#AtomList> .
+_:genid14 <http://www.w3.org/2003/11/swrl#head> _:genid23 .
+_:genid23 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> <http://www.w3.org/1999/02/22-rdf-syntax-ns#nil> .
+_:genid23 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> _:genid24 .
+_:genid24 <http://www.w3.org/2003/11/swrl#argument1> <urn:swrl#o> .
+_:genid24 <http://www.w3.org/2003/11/swrl#classPredicate> <http://www.semanticweb.org/laia.subirats/ontologies/2019/1/Ontology1549729681547.owl#HighSpeed> .
+_:genid24 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2003/11/swrl#ClassAtom> .
+_:genid23 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2003/11/swrl#AtomList> .
+_:genid25 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2003/11/swrl#Imp> .
+_:genid25 <http://www.w3.org/2003/11/swrl#body> _:genid32 .
+_:genid32 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:genid30 .
+_:genid30 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:genid26 .
+_:genid26 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> <http://www.w3.org/1999/02/22-rdf-syntax-ns#nil> .
+_:genid26 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> _:genid27 .
+_:genid27 <http://www.w3.org/2003/11/swrl#arguments> _:genid29 .
+_:genid29 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:genid28 .
+_:genid28 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> <http://www.w3.org/1999/02/22-rdf-syntax-ns#nil> .
+_:genid28 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> "6"^^<http://www.w3.org/2001/XMLSchema#integer> .
+_:genid28 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
+_:genid29 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <urn:swrl#w> .
+_:genid29 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
+_:genid27 <http://www.w3.org/2003/11/swrl#builtin> <http://www.w3.org/2003/11/swrlb#greaterThan> .
+_:genid27 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2003/11/swrl#BuiltinAtom> .
+_:genid26 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2003/11/swrl#AtomList> .
+_:genid30 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> _:genid31 .
+_:genid31 <http://www.w3.org/2003/11/swrl#argument1> <urn:swrl#o> .
+_:genid31 <http://www.w3.org/2003/11/swrl#classPredicate> <http://www.semanticweb.org/laia.subirats/ontologies/2019/1/Ontology1549729681547.owl#Expedition> .
+_:genid31 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2003/11/swrl#ClassAtom> .
+_:genid30 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2003/11/swrl#AtomList> .
+_:genid32 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> _:genid33 .
+_:genid33 <http://www.w3.org/2003/11/swrl#argument2> <urn:swrl#w> .
+_:genid33 <http://www.w3.org/2003/11/swrl#argument1> <urn:swrl#o> .
+_:genid33 <http://www.w3.org/2003/11/swrl#propertyPredicate> <http://www.semanticweb.org/laia.subirats/ontologies/2019/1/Ontology1549729681547.owl#hasWindSpeed> .
+_:genid33 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2003/11/swrl#DatavaluedPropertyAtom> .
+_:genid32 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2003/11/swrl#AtomList> .
+_:genid25 <http://www.w3.org/2003/11/swrl#head> _:genid34 .
+_:genid34 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> <http://www.w3.org/1999/02/22-rdf-syntax-ns#nil> .
+_:genid34 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> _:genid35 .
+_:genid35 <http://www.w3.org/2003/11/swrl#argument1> <urn:swrl#o> .
+_:genid35 <http://www.w3.org/2003/11/swrl#classPredicate> <http://www.semanticweb.org/laia.subirats/ontologies/2019/1/Ontology1549729681547.owl#HighSpeed> .
+_:genid35 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2003/11/swrl#ClassAtom> .
+_:genid34 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2003/11/swrl#AtomList> .
+_:genid3 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2003/11/swrl#Imp> .
+_:genid3 <http://www.w3.org/2003/11/swrl#body> _:genid10 .
+_:genid10 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:genid8 .
+_:genid8 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:genid4 .
+_:genid4 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> <http://www.w3.org/1999/02/22-rdf-syntax-ns#nil> .
+_:genid4 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> _:genid5 .
+_:genid5 <http://www.w3.org/2003/11/swrl#arguments> _:genid7 .
+_:genid7 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:genid6 .
+_:genid6 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> <http://www.w3.org/1999/02/22-rdf-syntax-ns#nil> .
+_:genid6 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> "3"^^<http://www.w3.org/2001/XMLSchema#integer> .
+_:genid6 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
+_:genid7 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <urn:swrl#w> .
+_:genid7 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
+_:genid5 <http://www.w3.org/2003/11/swrl#builtin> <http://www.w3.org/2003/11/swrlb#lessThan> .
+<http://www.w3.org/2003/11/swrlb#lessThan> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2003/11/swrl#Builtin> .
+_:genid5 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2003/11/swrl#BuiltinAtom> .
+_:genid4 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2003/11/swrl#AtomList> .
+_:genid8 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> _:genid9 .
+_:genid9 <http://www.w3.org/2003/11/swrl#argument1> <urn:swrl#o> .
+_:genid9 <http://www.w3.org/2003/11/swrl#classPredicate> <http://www.semanticweb.org/laia.subirats/ontologies/2019/1/Ontology1549729681547.owl#Expedition> .
+_:genid9 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2003/11/swrl#ClassAtom> .
+_:genid8 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2003/11/swrl#AtomList> .
+_:genid10 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> _:genid11 .
+_:genid11 <http://www.w3.org/2003/11/swrl#argument2> <urn:swrl#w> .
+_:genid11 <http://www.w3.org/2003/11/swrl#argument1> <urn:swrl#o> .
+_:genid11 <http://www.w3.org/2003/11/swrl#propertyPredicate> <http://www.semanticweb.org/laia.subirats/ontologies/2019/1/Ontology1549729681547.owl#hasShipSpeed> .
+_:genid11 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2003/11/swrl#DatavaluedPropertyAtom> .
+_:genid10 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2003/11/swrl#AtomList> .
+_:genid3 <http://www.w3.org/2003/11/swrl#head> _:genid12 .
+_:genid12 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> <http://www.w3.org/1999/02/22-rdf-syntax-ns#nil> .
+_:genid12 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> _:genid13 .
+_:genid13 <http://www.w3.org/2003/11/swrl#argument1> <urn:swrl#o> .
+_:genid13 <http://www.w3.org/2003/11/swrl#classPredicate> <http://www.semanticweb.org/laia.subirats/ontologies/2019/1/Ontology1549729681547.owl#LowSpeed> .
+_:genid13 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2003/11/swrl#ClassAtom> .
+_:genid12 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2003/11/swrl#AtomList> .
+# Generated by the OWL API (version 5.1.18) https://github.com/owlcs/owlapi/

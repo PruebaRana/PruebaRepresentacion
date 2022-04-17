@@ -1,0 +1,382 @@
+@prefix : <http://www.semanticweb.org/laia.subirats/ontologies/2019/1/Ontology1549729681547.owl#> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix xml: <http://www.w3.org/XML/1998/namespace> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@base <http://www.semanticweb.org/laia.subirats/ontologies/2019/1/Ontology1549729681547.owl#> .
+
+<http://www.semanticweb.org/laia.subirats/ontologies/2019/1/Ontology1549729681547.owl> rdf:type owl:Ontology ;
+                                                                                        <http://purl.org/dc/terms/license> "http://purl.org/NET/rdflicense/cc-by4.0" ;
+                                                                                        rdfs:comment """A global marine meteorological and surface ocean dataset
+authors: Laia Subirats, Felipe Geva, Javier Luis Cánovas""" .
+
+#################################################################
+#    Annotation properties
+#################################################################
+
+###  http://purl.org/dc/terms/license
+<http://purl.org/dc/terms/license> rdf:type owl:AnnotationProperty .
+
+
+###  http://swrl.stanford.edu/ontologies/3.3/swrla.owl#isRuleEnabled
+<http://swrl.stanford.edu/ontologies/3.3/swrla.owl#isRuleEnabled> rdf:type owl:AnnotationProperty .
+
+
+###  http://www.semanticweb.org/laia.subirats/ontologies/2019/1/Ontology1549729681547.owl#sameAs
+:sameAs rdf:type owl:AnnotationProperty .
+
+
+#################################################################
+#    Object Properties
+#################################################################
+
+###  http://www.semanticweb.org/laia.subirats/ontologies/2019/1/Ontology1549729681547.owl#hasQualifier
+:hasQualifier rdf:type owl:ObjectProperty ;
+              rdfs:domain owl:Thing ;
+              rdfs:range :Qualifiers .
+
+
+###  http://www.semanticweb.org/laia.subirats/ontologies/2019/1/Ontology1549729681547.owl#hasShipCourse
+:hasShipCourse rdf:type owl:ObjectProperty ;
+               rdfs:domain :Expedition ;
+               rdfs:range :ShipCourse .
+
+
+###  http://www.semanticweb.org/laia.subirats/ontologies/2019/1/Ontology1549729681547.owl#hasTime
+:hasTime rdf:type owl:ObjectProperty ;
+         rdfs:domain :Expedition ;
+         rdfs:range :Time .
+
+
+###  http://www.semanticweb.org/laia.subirats/ontologies/2019/1/Ontology1549729681547.owl#hasWindDirection
+:hasWindDirection rdf:type owl:ObjectProperty ;
+                  rdfs:domain :Expedition ;
+                  rdfs:range :WindDirection .
+
+
+#################################################################
+#    Data properties
+#################################################################
+
+###  http://www.semanticweb.org/laia.subirats/ontologies/2019/1/Ontology1549729681547.owl#hasShipSpeed
+:hasShipSpeed rdf:type owl:DatatypeProperty ;
+              rdfs:domain :ShipSpeed ;
+              rdfs:range xsd:integer .
+
+
+###  http://www.semanticweb.org/laia.subirats/ontologies/2019/1/Ontology1549729681547.owl#hasWindSpeed
+:hasWindSpeed rdf:type owl:DatatypeProperty ;
+              rdfs:domain :WindSpeed ;
+              rdfs:range xsd:integer .
+
+
+#################################################################
+#    Classes
+#################################################################
+
+###  http://www.semanticweb.org/laia.subirats/ontologies/2019/1/Ontology1549729681547.owl#CardinalPoints
+:CardinalPoints rdf:type owl:Class ;
+                rdfs:subClassOf :Geolocalization .
+
+
+###  http://www.semanticweb.org/laia.subirats/ontologies/2019/1/Ontology1549729681547.owl#ClimateProperties
+:ClimateProperties rdf:type owl:Class ;
+                   rdfs:subClassOf [ rdf:type owl:Restriction ;
+                                     owl:onProperty :hasQualifier ;
+                                     owl:someValuesFrom :Geolocalization
+                                   ] .
+
+
+###  http://www.semanticweb.org/laia.subirats/ontologies/2019/1/Ontology1549729681547.owl#Day
+:Day rdf:type owl:Class ;
+     rdfs:subClassOf :Time .
+
+
+###  http://www.semanticweb.org/laia.subirats/ontologies/2019/1/Ontology1549729681547.owl#Expedition
+:Expedition rdf:type owl:Class .
+
+
+###  http://www.semanticweb.org/laia.subirats/ontologies/2019/1/Ontology1549729681547.owl#Geolocalization
+:Geolocalization rdf:type owl:Class .
+
+
+###  http://www.semanticweb.org/laia.subirats/ontologies/2019/1/Ontology1549729681547.owl#HighSpeed
+:HighSpeed rdf:type owl:Class ;
+           rdfs:subClassOf :Qualifiers ;
+           owl:disjointWith :LowSpeed .
+
+
+###  http://www.semanticweb.org/laia.subirats/ontologies/2019/1/Ontology1549729681547.owl#Hour
+:Hour rdf:type owl:Class ;
+      rdfs:subClassOf :Time .
+
+
+###  http://www.semanticweb.org/laia.subirats/ontologies/2019/1/Ontology1549729681547.owl#Latitude
+:Latitude rdf:type owl:Class ;
+          rdfs:subClassOf :Geolocalization .
+
+
+###  http://www.semanticweb.org/laia.subirats/ontologies/2019/1/Ontology1549729681547.owl#Longitude
+:Longitude rdf:type owl:Class ;
+           rdfs:subClassOf :Geolocalization .
+
+
+###  http://www.semanticweb.org/laia.subirats/ontologies/2019/1/Ontology1549729681547.owl#LowSpeed
+:LowSpeed rdf:type owl:Class ;
+          rdfs:subClassOf :Qualifiers ;
+          owl:disjointWith :MediumSpeed .
+
+
+###  http://www.semanticweb.org/laia.subirats/ontologies/2019/1/Ontology1549729681547.owl#MediumSpeed
+:MediumSpeed rdf:type owl:Class ;
+             rdfs:subClassOf :Qualifiers .
+
+
+###  http://www.semanticweb.org/laia.subirats/ontologies/2019/1/Ontology1549729681547.owl#Month
+:Month rdf:type owl:Class ;
+       rdfs:subClassOf :Time .
+
+
+###  http://www.semanticweb.org/laia.subirats/ontologies/2019/1/Ontology1549729681547.owl#Qualifiers
+:Qualifiers rdf:type owl:Class .
+
+
+###  http://www.semanticweb.org/laia.subirats/ontologies/2019/1/Ontology1549729681547.owl#SeaLevelPressure
+:SeaLevelPressure rdf:type owl:Class ;
+                  rdfs:subClassOf :SeaProperties .
+
+
+###  http://www.semanticweb.org/laia.subirats/ontologies/2019/1/Ontology1549729681547.owl#SeaProperties
+:SeaProperties rdf:type owl:Class ;
+               rdfs:subClassOf :ClimateProperties .
+
+
+###  http://www.semanticweb.org/laia.subirats/ontologies/2019/1/Ontology1549729681547.owl#SeaSurfaceTemperature
+:SeaSurfaceTemperature rdf:type owl:Class ;
+                       rdfs:subClassOf :SeaProperties ;
+                       :sameAs "http://dbpedia.org/page/Sea_surface_temperature" ,
+                               "http://reegle.info/glossary/3191" .
+
+
+###  http://www.semanticweb.org/laia.subirats/ontologies/2019/1/Ontology1549729681547.owl#ShipCourse
+:ShipCourse rdf:type owl:Class ;
+            rdfs:subClassOf :ShipProperties .
+
+
+###  http://www.semanticweb.org/laia.subirats/ontologies/2019/1/Ontology1549729681547.owl#ShipProperties
+:ShipProperties rdf:type owl:Class ;
+                rdfs:subClassOf [ rdf:type owl:Restriction ;
+                                  owl:onProperty :hasQualifier ;
+                                  owl:someValuesFrom :Geolocalization
+                                ] .
+
+
+###  http://www.semanticweb.org/laia.subirats/ontologies/2019/1/Ontology1549729681547.owl#ShipSpeed
+:ShipSpeed rdf:type owl:Class ;
+           rdfs:subClassOf :ShipProperties .
+
+
+###  http://www.semanticweb.org/laia.subirats/ontologies/2019/1/Ontology1549729681547.owl#Time
+:Time rdf:type owl:Class .
+
+
+###  http://www.semanticweb.org/laia.subirats/ontologies/2019/1/Ontology1549729681547.owl#WaveDirection
+:WaveDirection rdf:type owl:Class ;
+               rdfs:subClassOf :SeaProperties .
+
+
+###  http://www.semanticweb.org/laia.subirats/ontologies/2019/1/Ontology1549729681547.owl#WaveHeight
+:WaveHeight rdf:type owl:Class ;
+            rdfs:subClassOf :SeaProperties .
+
+
+###  http://www.semanticweb.org/laia.subirats/ontologies/2019/1/Ontology1549729681547.owl#WavePeriod
+:WavePeriod rdf:type owl:Class ;
+            rdfs:subClassOf :SeaProperties .
+
+
+###  http://www.semanticweb.org/laia.subirats/ontologies/2019/1/Ontology1549729681547.owl#WindDirection
+:WindDirection rdf:type owl:Class ;
+               rdfs:subClassOf :WindProperties ;
+               :sameAs "Wind_direction" .
+
+
+###  http://www.semanticweb.org/laia.subirats/ontologies/2019/1/Ontology1549729681547.owl#WindProperties
+:WindProperties rdf:type owl:Class ;
+                rdfs:subClassOf :ClimateProperties .
+
+
+###  http://www.semanticweb.org/laia.subirats/ontologies/2019/1/Ontology1549729681547.owl#WindSpeed
+:WindSpeed rdf:type owl:Class ;
+           rdfs:subClassOf :WindProperties ;
+           :sameAs "http://dbpedia.org/page/Wind_speed" .
+
+
+###  http://www.semanticweb.org/laia.subirats/ontologies/2019/1/Ontology1549729681547.owl#Year
+:Year rdf:type owl:Class ;
+      rdfs:subClassOf :Time .
+
+
+#################################################################
+#    Individuals
+#################################################################
+
+###  http://www.semanticweb.org/laia.subirats/ontologies/2019/1/Ontology1549729681547.owl#Expedition1
+:Expedition1 rdf:type owl:NamedIndividual ,
+                      :Expedition ;
+             :hasShipCourse :NE ;
+             :hasTime :February ,
+                      <http://www.semanticweb.org/laia.subirats/ontologies/2019/1/Ontology1549729681547.owl#18> ,
+                      <http://www.semanticweb.org/laia.subirats/ontologies/2019/1/Ontology1549729681547.owl#2019> ,
+                      <http://www.semanticweb.org/laia.subirats/ontologies/2019/1/Ontology1549729681547.owl#9> ;
+             :hasWindDirection :NE ;
+             :hasShipSpeed 7 ;
+             :hasWindSpeed 7 .
+
+
+###  http://www.semanticweb.org/laia.subirats/ontologies/2019/1/Ontology1549729681547.owl#February
+:February rdf:type owl:NamedIndividual ,
+                   :Month .
+
+
+###  http://www.semanticweb.org/laia.subirats/ontologies/2019/1/Ontology1549729681547.owl#NE
+:NE rdf:type owl:NamedIndividual ,
+             :CardinalPoints .
+
+
+###  http://www.semanticweb.org/laia.subirats/ontologies/2019/1/Ontology1549729681547.owl#18
+<http://www.semanticweb.org/laia.subirats/ontologies/2019/1/Ontology1549729681547.owl#18> rdf:type owl:NamedIndividual ,
+                                                                                                   :Hour .
+
+
+###  http://www.semanticweb.org/laia.subirats/ontologies/2019/1/Ontology1549729681547.owl#2019
+<http://www.semanticweb.org/laia.subirats/ontologies/2019/1/Ontology1549729681547.owl#2019> rdf:type owl:NamedIndividual ,
+                                                                                                     :Year .
+
+
+###  http://www.semanticweb.org/laia.subirats/ontologies/2019/1/Ontology1549729681547.owl#9
+<http://www.semanticweb.org/laia.subirats/ontologies/2019/1/Ontology1549729681547.owl#9> rdf:type owl:NamedIndividual ,
+                                                                                                  :Day .
+
+
+#################################################################
+#    Rules
+#################################################################
+
+<urn:swrl#o> rdf:type <http://www.w3.org/2003/11/swrl#Variable> .
+
+<urn:swrl#w> rdf:type <http://www.w3.org/2003/11/swrl#Variable> .
+
+[ <http://swrl.stanford.edu/ontologies/3.3/swrla.owl#isRuleEnabled> "true"^^xsd:boolean ;
+   rdfs:comment "" ;
+   rdfs:label "S1" ;
+   rdf:type <http://www.w3.org/2003/11/swrl#Imp> ;
+   <http://www.w3.org/2003/11/swrl#body> [ rdf:type <http://www.w3.org/2003/11/swrl#AtomList> ;
+                                           rdf:first [ rdf:type <http://www.w3.org/2003/11/swrl#DatavaluedPropertyAtom> ;
+                                                       <http://www.w3.org/2003/11/swrl#propertyPredicate> :hasShipSpeed ;
+                                                       <http://www.w3.org/2003/11/swrl#argument1> <urn:swrl#o> ;
+                                                       <http://www.w3.org/2003/11/swrl#argument2> <urn:swrl#w>
+                                                     ] ;
+                                           rdf:rest [ rdf:type <http://www.w3.org/2003/11/swrl#AtomList> ;
+                                                      rdf:first [ rdf:type <http://www.w3.org/2003/11/swrl#ClassAtom> ;
+                                                                  <http://www.w3.org/2003/11/swrl#classPredicate> :Expedition ;
+                                                                  <http://www.w3.org/2003/11/swrl#argument1> <urn:swrl#o>
+                                                                ] ;
+                                                      rdf:rest [ rdf:type <http://www.w3.org/2003/11/swrl#AtomList> ;
+                                                                 rdf:first [ rdf:type <http://www.w3.org/2003/11/swrl#BuiltinAtom> ;
+                                                                             <http://www.w3.org/2003/11/swrl#builtin> <http://www.w3.org/2003/11/swrlb#greaterThan> ;
+                                                                             <http://www.w3.org/2003/11/swrl#arguments> [ rdf:type rdf:List ;
+                                                                                                                          rdf:first <urn:swrl#w> ;
+                                                                                                                          rdf:rest [ rdf:type rdf:List ;
+                                                                                                                                     rdf:first 6 ;
+                                                                                                                                     rdf:rest rdf:nil
+                                                                                                                                   ]
+                                                                                                                        ]
+                                                                           ] ;
+                                                                 rdf:rest rdf:nil
+                                                               ]
+                                                    ]
+                                         ] ;
+   <http://www.w3.org/2003/11/swrl#head> [ rdf:type <http://www.w3.org/2003/11/swrl#AtomList> ;
+                                           rdf:first [ rdf:type <http://www.w3.org/2003/11/swrl#ClassAtom> ;
+                                                       <http://www.w3.org/2003/11/swrl#classPredicate> :HighSpeed ;
+                                                       <http://www.w3.org/2003/11/swrl#argument1> <urn:swrl#o>
+                                                     ] ;
+                                           rdf:rest rdf:nil
+                                         ]
+ ] .
+
+[ rdf:type <http://www.w3.org/2003/11/swrl#Imp> ;
+   <http://www.w3.org/2003/11/swrl#body> [ rdf:type <http://www.w3.org/2003/11/swrl#AtomList> ;
+                                           rdf:first [ rdf:type <http://www.w3.org/2003/11/swrl#DatavaluedPropertyAtom> ;
+                                                       <http://www.w3.org/2003/11/swrl#propertyPredicate> :hasWindSpeed ;
+                                                       <http://www.w3.org/2003/11/swrl#argument1> <urn:swrl#o> ;
+                                                       <http://www.w3.org/2003/11/swrl#argument2> <urn:swrl#w>
+                                                     ] ;
+                                           rdf:rest [ rdf:type <http://www.w3.org/2003/11/swrl#AtomList> ;
+                                                      rdf:first [ rdf:type <http://www.w3.org/2003/11/swrl#ClassAtom> ;
+                                                                  <http://www.w3.org/2003/11/swrl#classPredicate> :Expedition ;
+                                                                  <http://www.w3.org/2003/11/swrl#argument1> <urn:swrl#o>
+                                                                ] ;
+                                                      rdf:rest [ rdf:type <http://www.w3.org/2003/11/swrl#AtomList> ;
+                                                                 rdf:first [ rdf:type <http://www.w3.org/2003/11/swrl#BuiltinAtom> ;
+                                                                             <http://www.w3.org/2003/11/swrl#builtin> <http://www.w3.org/2003/11/swrlb#greaterThan> ;
+                                                                             <http://www.w3.org/2003/11/swrl#arguments> [ rdf:type rdf:List ;
+                                                                                                                          rdf:first <urn:swrl#w> ;
+                                                                                                                          rdf:rest [ rdf:type rdf:List ;
+                                                                                                                                     rdf:first 6 ;
+                                                                                                                                     rdf:rest rdf:nil
+                                                                                                                                   ]
+                                                                                                                        ]
+                                                                           ] ;
+                                                                 rdf:rest rdf:nil
+                                                               ]
+                                                    ]
+                                         ] ;
+   <http://www.w3.org/2003/11/swrl#head> [ rdf:type <http://www.w3.org/2003/11/swrl#AtomList> ;
+                                           rdf:first [ rdf:type <http://www.w3.org/2003/11/swrl#ClassAtom> ;
+                                                       <http://www.w3.org/2003/11/swrl#classPredicate> :HighSpeed ;
+                                                       <http://www.w3.org/2003/11/swrl#argument1> <urn:swrl#o>
+                                                     ] ;
+                                           rdf:rest rdf:nil
+                                         ]
+ ] .
+
+[ rdf:type <http://www.w3.org/2003/11/swrl#Imp> ;
+   <http://www.w3.org/2003/11/swrl#body> [ rdf:type <http://www.w3.org/2003/11/swrl#AtomList> ;
+                                           rdf:first [ rdf:type <http://www.w3.org/2003/11/swrl#DatavaluedPropertyAtom> ;
+                                                       <http://www.w3.org/2003/11/swrl#propertyPredicate> :hasShipSpeed ;
+                                                       <http://www.w3.org/2003/11/swrl#argument1> <urn:swrl#o> ;
+                                                       <http://www.w3.org/2003/11/swrl#argument2> <urn:swrl#w>
+                                                     ] ;
+                                           rdf:rest [ rdf:type <http://www.w3.org/2003/11/swrl#AtomList> ;
+                                                      rdf:first [ rdf:type <http://www.w3.org/2003/11/swrl#ClassAtom> ;
+                                                                  <http://www.w3.org/2003/11/swrl#classPredicate> :Expedition ;
+                                                                  <http://www.w3.org/2003/11/swrl#argument1> <urn:swrl#o>
+                                                                ] ;
+                                                      rdf:rest [ rdf:type <http://www.w3.org/2003/11/swrl#AtomList> ;
+                                                                 rdf:first [ rdf:type <http://www.w3.org/2003/11/swrl#BuiltinAtom> ;
+                                                                             <http://www.w3.org/2003/11/swrl#builtin> <http://www.w3.org/2003/11/swrlb#lessThan> ;
+                                                                             <http://www.w3.org/2003/11/swrl#arguments> [ rdf:type rdf:List ;
+                                                                                                                          rdf:first <urn:swrl#w> ;
+                                                                                                                          rdf:rest [ rdf:type rdf:List ;
+                                                                                                                                     rdf:first 3 ;
+                                                                                                                                     rdf:rest rdf:nil
+                                                                                                                                   ]
+                                                                                                                        ]
+                                                                           ] ;
+                                                                 rdf:rest rdf:nil
+                                                               ]
+                                                    ]
+                                         ] ;
+   <http://www.w3.org/2003/11/swrl#head> [ rdf:type <http://www.w3.org/2003/11/swrl#AtomList> ;
+                                           rdf:first [ rdf:type <http://www.w3.org/2003/11/swrl#ClassAtom> ;
+                                                       <http://www.w3.org/2003/11/swrl#classPredicate> :LowSpeed ;
+                                                       <http://www.w3.org/2003/11/swrl#argument1> <urn:swrl#o>
+                                                     ] ;
+                                           rdf:rest rdf:nil
+                                         ]
+ ] .
+
+###  Generated by the OWL API (version 5.1.18) https://github.com/owlcs/owlapi/
